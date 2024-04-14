@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EssaysFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gradual_color_bg">
+
+        <TextView
+            android:id="@+id/essays_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景点推荐"
+            android:textColor="#0C0507"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/essay_top_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/essays_top_title"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:text="点击上方按钮，看看有哪里更好玩吧！"
+            android:textSize="16dp"
+            android:textColor="#1B1B1B" />
+
+        <ImageButton
+            android:id="@+id/bt_travel_date"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/essays_top_title"
+            android:background="@drawable/sign">
+        </ImageButton>
+
+        <Button
+            android:id="@+id/my_essays"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/essays_top_title"
+            android:background="@drawable/others" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/my_scenes_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#767676"
+        android:text="请检查你的网络设置"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_essays"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SendMessageActivity">
+    <RelativeLayout
+        android:id="@+id/message_send_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gradual_color_bg">
+
+        <ImageButton
+            android:id="@+id/writer_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/send_receivename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Zhuzx"
+            android:textColor="#0C0507"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="340dp"
+
+            android:background="@drawable/others"/>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_send_title"
+        android:layout_above="@+id/message_bottom"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+
+    <RelativeLayout
+        android:id="@+id/message_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+        <EditText
+            android:id="@+id/ed_inputMsg"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/ship_item"
+            android:textSize="15dp"
+            android:padding="3dp"/>
+
+        <Button
+            android:id="@+id/bt_messages_send"
+            android:layout_marginTop="5dp"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="300dp"
+            android:text="发送"
+            android:background="@drawable/shape_writer_btn"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

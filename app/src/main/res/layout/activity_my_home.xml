@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MyHomeActivity"
+    android:clipChildren="false">
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/ll_function"
+        android:background="#e6e6e6"/>
+
+    <LinearLayout
+        android:clipChildren="false"
+        android:id="@+id/ll_function"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/ll_travel"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <Button
+                android:id="@+id/bt_travel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/my_travel"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/tv_travel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="游记"
+                android:textSize="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_market"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <Button
+                android:id="@+id/bt_market"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/market"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/tv_market"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商城"
+                android:textSize="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/bt_upload"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_message"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <Button
+                android:id="@+id/bt_message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/message"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="信息"
+                android:textSize="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_me"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <Button
+                android:id="@+id/bt_me"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/me"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/tv_me"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的"
+                android:textSize="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

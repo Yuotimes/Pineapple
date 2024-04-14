@@ -1,0 +1,51 @@
+<channel>
+
+  <item>
+    <title>天津-北京</title>
+    <time>14：00</time>
+    <image>https://img.51miz.com/Element/00/24/22/81/690049e7_E242281_1bb8f402.png</image>
+    <number>津7988</number>
+    <price>98</price>
+  </item>
+
+    <item>
+    <title>郑州-洛阳</title>
+    <time>08：30</time>
+    <image>https://img.51miz.com/Element/00/24/22/81/690049e7_E242281_1bb8f402.png</image>
+    <number>豫4564</number>
+    <price>110</price>
+  </item>
+
+  <item>
+    <title>大连-沈阳</title>
+    <time>10：00</time>
+    <image>https://img.51miz.com/Element/00/24/22/81/690049e7_E242281_1bb8f402.png</image>
+    <number>辽7768</number>
+    <price>80</price>
+  </item>
+
+  <item>
+    <title>西安-宝鸡</title>
+    <time>12:15</time>
+    <image>https://img.51miz.com/Element/00/24/22/81/690049e7_E242281_1bb8f402.png</image>
+    <number>陕9988</number>
+    <price>70</price>
+  </item>
+
+  <item>
+    <title>济南-泰安</title>
+    <time>05：45</time>
+    <image>https://img.51miz.com/Element/00/24/22/81/690049e7_E242281_1bb8f402.png</image>
+    <number>鲁9845</number>
+    <price>90</price>
+  </item>
+
+  <item>
+    <title>太原-大同</title>
+    <time>11：25</time>
+    <image>https://img.51miz.com/Element/00/24/22/81/690049e7_E242281_1bb8f402.png</image>
+    <number>津7988</number>
+    <price>78</price>
+  </item>
+
+</channel>

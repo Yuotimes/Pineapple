@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ScenesActivity"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gradual_color_bg">
+
+
+        <TextView
+            android:id="@+id/scenes_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门景点"
+            android:textColor="#0C0507"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/travel_writing"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/scenes_top_title"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:text="看看想去哪里玩那？"
+            android:textSize="16dp"
+            android:textColor="#1B1B1B" />
+        <Button
+            android:id="@+id/my_scenes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="240dp"
+            android:layout_toRightOf="@id/scenes_top_title"
+            android:background="@drawable/others"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/item_scene_1"/>
+            <include layout="@layout/item_scene_2"/>
+            <include layout="@layout/item_scene_3"/>
+            <include layout="@layout/item_scene_4"/>
+            <include layout="@layout/item_scene_5"/>
+            <include layout="@layout/item_scene_6"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/travel_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请检查您的网络链接！！"
+        android:textSize="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

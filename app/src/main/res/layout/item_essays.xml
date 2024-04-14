@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/item_essays"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/essays_user_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0.3dp" />
+
+        <TextView
+            android:id="@+id/essays_user_name"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/essays_user_head"
+            android:text="辞梦"
+            android:textColor="#1B1B1B"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/essays_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/essays_user_name"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:text="出行旅游之平遥古城"
+            android:textColor="#1B1B1B"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/essays_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/essays_title"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="如果你不想躺在宿舍，白白浪费美好的休息日，那一定要仔细看看以下行程。交通指南：各地出发到平遥古城站"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/essays_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/essays_writing"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ship_item3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/essays_image_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/essays_image_2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/essays_image_3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/essays_images"
+            android:background="#00FBFBFB" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Scene_3Activity">
+    <RelativeLayout
+        android:id="@+id/scene_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gradual_color_bg">
+
+        <ImageButton
+            android:id="@+id/writer_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/essays_top_title"
+            android:layout_toRightOf="@+id/writer_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圣亚海洋世界"
+            android:textColor="#B20C0507"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scene_title"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/essay_photo1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/scene_3"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/scene_function"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/essay_photo1"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradual_color_bg_2">
+
+                <TextView
+                    android:id="@+id/essay_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:maxLines="1"
+                    android:text="圣亚海洋世界"
+                    android:textColor="#F4F4F4"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/scene_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="每日9：00~17：00"
+                    android:textSize="15dp"
+                    android:textColor="#F4F4F4"
+                    android:layout_below="@+id/essay_title" />
+                <TextView
+                    android:id="@+id/scene_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scene_time"/>
+
+                <RelativeLayout
+                    android:id="@+id/scene_3_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scene_time"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:id="@+id/scene_tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="电话"
+                        android:textSize="18dp"
+                        android:textColor="#5C5959" />
+                    <ImageButton
+                        android:id="@+id/bt_phone"
+                        android:layout_toRightOf="@+id/scene_tv_phone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/phone"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/scene_3_locate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scene_time"
+                    android:layout_toRightOf="@+id/scene_time"
+                    android:layout_marginLeft="150dp">
+                    <TextView
+                        android:id="@+id/scene_tv_locate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="位置"
+                        android:textSize="18dp"
+                        android:textColor="#5C5959"/>
+                    <ImageButton
+                        android:id="@+id/bt_locate"
+                        android:layout_toRightOf="@+id/scene_tv_locate"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/tonext"/>
+                </RelativeLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/essay_writing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scene_function"
+                android:text="门票套餐"
+                android:layout_marginLeft="15dp"
+                android:textColor="#2B2A2A"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/scene_ticket_1"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/essay_writing"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/community_username"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="四馆成人票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/community_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_username"
+                    android:text="随时可退    无需取票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/community_writing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_title"
+                    android:layout_marginTop="5dp"
+                    android:text="月售 73"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/scene_prise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/community_username"
+                    android:text="¥235"
+                    android:textColor="#FF6E2B"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/bt_3_set_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/scene_prise"
+                    android:background="@drawable/ship_item4"
+                    android:text="订"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/community_writing"
+                    android:background="#00FBFBFB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scene_ticket_2"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scene_ticket_1"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/community_username_2"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="四馆学生票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/community_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_username_2"
+                    android:text="随时可退    无需取票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/community_writing_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_title_2"
+                    android:layout_marginTop="5dp"
+                    android:text="月售 18"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/scene_prise_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/community_username_2"
+                    android:text="¥120"
+                    android:textColor="#FF6E2B"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/bt_3_set_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/scene_prise_2"
+                    android:background="@drawable/ship_item4"
+                    android:text="订"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/community_writing_2"
+                    android:background="#00FBFBFB" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/scene_ticket_3"
+                android:layout_below="@+id/scene_ticket_2"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/community_username_3"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="四馆老年票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/community_title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_username_3"
+                    android:text="随时可退    无需取票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/community_writing_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_title_3"
+                    android:layout_marginTop="5dp"
+                    android:text="月售 3"
+                    android:textSize="10dp" />
+                <TextView
+                    android:id="@+id/scene_prise_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/community_username_3"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="25dp"
+                    android:text="¥144"
+                    android:textColor="#FF6E2B"
+                    android:layout_marginTop="15dp"/>
+                <Button
+                    android:id="@+id/bt_3_set_3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/scene_prise_3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ship_item4"
+                    android:text="订"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/community_writing_3"
+                    android:background="#00FBFBFB"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scene_ticket_4"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scene_ticket_3"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/community_username_4"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="特惠票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/community_title_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_username_4"
+                    android:text="随时可退    无需取票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/community_writing_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_title_4"
+                    android:layout_marginTop="5dp"
+                    android:text="月售 37"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/scene_prise_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/community_username_4"
+                    android:text="¥99  "
+                    android:textColor="#FF6E2B"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/bt_3_set_4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/scene_prise_4"
+                    android:background="@drawable/ship_item4"
+                    android:text="订"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/community_writing_4"
+                    android:background="#00FBFBFB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scene_ticket_5"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scene_ticket_4"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/community_username_5"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="园内通票"
+                    android:textColor="#1B1B1B"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/community_title_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_username_5"
+                    android:text="随时可退    兑换使用"
+                    android:textColor="#1B1B1B"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/community_writing_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/community_title_5"
+                    android:layout_marginTop="5dp"
+                    android:text="月售 15"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/scene_prise_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/community_username_5"
+                    android:text="¥260"
+                    android:textColor="#FF6E2B"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/bt_3_set_5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/scene_prise_5"
+                    android:background="@drawable/ship_item4"
+                    android:text="订"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/community_writing_5"
+                    android:background="#00FBFBFB" />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

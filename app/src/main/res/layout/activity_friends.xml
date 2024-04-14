@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FriendsActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/friends_big_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gradual_color_bg">
+
+        <ImageButton
+            android:id="@+id/writer_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/back"/>
+        <TextView
+            android:id="@+id/friends_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的关注列表"
+            android:textColor="#0C0507"
+            android:layout_toRightOf="@+id/writer_back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_friends"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

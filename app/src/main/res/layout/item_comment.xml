@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/item_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/comments_user_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/photo"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0.3dp" />
+
+        <TextView
+            android:id="@+id/comments_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/comments_user_head"
+            android:text="用户名"
+            android:textColor="#1B1B1B"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/comments_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/comments_user_head"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="250dp"
+            android:textSize="13dp"
+            android:text="发布日期"/>
+        <TextView
+            android:id="@+id/comments_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            android:layout_below="@id/comments_user_name"
+            android:layout_toRightOf="@+id/comments_user_head"
+            android:layout_marginLeft="15dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

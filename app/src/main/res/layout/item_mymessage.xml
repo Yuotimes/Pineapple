@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/il_my_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/im_my_messages_re"
+            android:layout_marginTop="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0.3dp" />
+        <TextView
+            android:id="@+id/tv_my_messages_re"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/im_my_messages_re"
+            android:text="你好啊"
+            android:textColor="#1B1B1B"
+            android:background="@drawable/ship_item2"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/tv_my_messages_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="3dp"
+            android:padding="10dp"
+            android:text="你好啊"
+            android:textColor="#1B1B1B"
+            android:background="@drawable/ship_item2"
+            android:textSize="17dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginRight="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/im_my_messages_se"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0.3dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

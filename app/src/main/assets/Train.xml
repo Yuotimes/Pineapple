@@ -1,0 +1,48 @@
+<channel>
+
+  <item>
+    <title>北京-上海</title>
+    <time>06:27-13:12</time>
+    <image>https://n.sinaimg.cn/translate/20170319/3rWp-fycnyhk9610873.jpg</image>
+    <number>G104</number>
+    <price>597</price>
+  </item>
+
+   <item>
+    <title>大连-西安</title>
+    <time>10:17-20:59</time>
+    <image>https://n.sinaimg.cn/translate/20170319/3rWp-fycnyhk9610873.jpg</image>
+    <number>G8125</number>
+    <price>870</price>
+  </item>
+
+    <item>
+    <title>厦门-上海</title>
+    <time>09:17-14:32</time>
+    <image>https://n.sinaimg.cn/translate/20170319/3rWp-fycnyhk9610873.jpg</image>
+    <number>G1632</number>
+    <price>464</price>
+  </item>
+   <item>
+    <title>上海-武汉</title>
+    <time>07:55-11:34</time>
+    <image>https://n.sinaimg.cn/translate/20170319/3rWp-fycnyhk9610873.jpg</image>
+    <number>G598</number>
+    <price>362</price>
+  </item>
+   <item>
+    <title>太原-洛阳</title>
+    <time>09:59-14:06</time>
+    <image>https://n.sinaimg.cn/translate/20170319/3rWp-fycnyhk9610873.jpg</image>
+    <number>D3349</number>
+    <price>255</price>
+  </item>
+   <item>
+    <title>郑州-徐州</title>
+    <time>00:18-04:26</time>
+    <image>https://n.sinaimg.cn/translate/20170319/3rWp-fycnyhk9610873.jpg</image>
+    <number>K558</number>
+    <price>52</price>
+  </item>
+
+</channel>

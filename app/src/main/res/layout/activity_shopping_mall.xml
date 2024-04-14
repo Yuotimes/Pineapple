@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".shoppingactivities.ShoppingMallActivity"
+    android:orientation="vertical"
+    android:background="@drawable/pineapple">
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/ll_button">
+        <TextView
+            android:id="@+id/tv_shopping_mall"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="请确认您的订单"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="62dp" />
+
+        <EditText
+            android:id="@+id/et_location"
+            android:layout_width="match_parent"
+            android:layout_height="59dp" />
+
+        <ListView
+            android:id="@+id/lv_shopping_mall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-2dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_shopping_buy"
+            android:layout_width="112dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/purchase" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 访问网络，进行地图相关业务数据请求，包括地图数据，路线规划，POI检索等 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取网络状态，根据网络状态切换进行数据请求网络转换 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 读取外置存储。如果开发者使用了so动态加载功能并且把so文件放在了外置存储区域，则需要申请该权限，否则不需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 写外置存储。如果开发者使用了离线地图，并且数据写在外置存储区域，则需要申请该权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".beans.BmobApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/earth"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pineapple"
+        tools:targetApi="31">
+
+        <activity android:name=".shoppingactivities.ShoppingMallActivity"/>
+        <activity android:name=".shoppingactivities.CommodityActivity"/>
+        <activity android:name=".ShoppingActivity"/>
+        <activity android:name=".shoppingactivities.ShoppingLoginActivity"/>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".AdminMainActivity" />
+        <activity android:name=".shoppingactivities.ShoppingCreateAccountActivity"/>
+        <activity android:name=".ticketactivities.TicketLoginActivity"/>
+        <activity android:name=".TicketsActivity"/>
+        <activity android:name=".ticketactivities.PlaneActivity"/>
+        <activity android:name=".ticketactivities.TrainActivity"/>
+        <activity android:name=".ticketactivities.CreditActivity"/>
+        <activity android:name=".ticketactivities.MallActivity"/>
+        <activity android:name=".ticketactivities.TicketCreateAccountActivity"/>
+
+        <activity
+            android:name=".ticketactivities.BusActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bus"
+            android:theme="@style/Theme.Pineapple.NoActionBar" />
+        <activity
+            android:name=".activities.CommentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyEssaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ShowMyScenesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MapActivity_6"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Scene_6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MapActivity_5"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Scene_5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MapActivity_4"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Scene_4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MapActivity_3"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Scene_3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MapActivity_2"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Scene_2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ScenesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChangeMeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CreateAccountActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3ajQfvMlBAmyXdncMXHXgVRljA1W1KhC" />
+
+        <activity
+            android:name=".activities.MapActivity_1"
+            android:exported="true" />
+        <activity
+            android:name=".activities.FriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Scene_1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SendMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EssayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WriterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MyHomeActivity"
+            android:exported="true" /> <!-- 添加ContentProvider信息 -->
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.pineapple.BmobContentProvider" />
+    </application>
+
+</manifest>

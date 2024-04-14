@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ticketactivities.TicketLoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/np"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="40dp"
+            android:src="@mipmap/logo" />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="315dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="account" />
+
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="315dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="password" />
+
+        <CheckBox
+            android:id="@+id/cb_rm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="20dp"
+            android:text="save my Info" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_account"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/shape_account_btn_"
+            android:text="Create Account"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bt_signIn"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_signin_btn"
+            android:onClick="sign"
+            android:text="Sign In"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

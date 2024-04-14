@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.credit.CreditFragment"
+    android:background="@drawable/travel">
+
+    <ImageButton
+        android:id="@+id/btn_create"
+        android:layout_width="102dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/creditshopping"
+        android:onClick="create"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_create"
+        android:layout_alignBottom="@+id/btn_create"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical"
+        android:text="积分余额："
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lv_credit"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_create"
+        android:layout_marginBottom="15dp" />
+</RelativeLayout>

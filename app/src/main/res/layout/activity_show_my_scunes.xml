@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ShowMyScenesActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gradual_color_bg">
+        <TextView
+            android:id="@+id/essays_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订购景点"
+            android:textColor="#0C0507"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/my_scenes_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/essays_top_title"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:text="昵称"
+            android:textSize="16dp"
+            android:textColor="#1B1B1B" />
+        <TextView
+            android:id="@+id/travel_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/essays_top_title"
+            android:layout_toRightOf="@+id/my_scenes_nickname"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:text="用户订过了这些"
+            android:textSize="16dp"
+            android:textColor="#1B1B1B" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/my_scenes_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#767676"
+        android:text="还没有订单"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+<!--        android:visibility="gone"-->
+    <ListView
+        android:id="@+id/my_scenes_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+</LinearLayout>

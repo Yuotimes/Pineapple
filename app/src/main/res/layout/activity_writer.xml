@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WriterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/writer_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/back"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo" />
+        <LinearLayout
+            android:id="@+id/up_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/up_image_1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:background="@drawable/up_image" />
+            <ImageView
+                android:id="@+id/up_image_2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:background="#00FFFFFF"/>
+            <ImageView
+                android:id="@+id/up_image_3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:background="#00FFFFFF"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/ed_title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:hint="填写标题会更吸引人欧"
+            android:textSize="20dp"
+            android:textColorHint="#C4454343"
+            android:backgroundTint="@color/white"/>
+
+        <EditText
+            android:id="@+id/ed_essay"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:gravity="top"
+            android:hint="等你来分享你的热爱~"
+            android:padding="10dp"
+            android:textColorHint="#6D454343"
+            android:textSize="15dp"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:id="@+id/bt_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_writer_btn"
+            android:text="发布游记" />
+
+    </LinearLayout>
+
+</RelativeLayout>

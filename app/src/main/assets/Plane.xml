@@ -1,0 +1,50 @@
+<channel>
+
+  <item>
+    <title>北京-上海</title>
+    <time>20:35-22:50</time>
+    <image>https://p1.ssl.qhimg.com/t01363d501a547706cd.jpg</image>
+    <number>南航CZ8889</number>
+    <price>990</price>
+  </item>
+
+   <item>
+    <title>大连-西安</title>
+    <time>17:15-20:05</time>
+    <image>https://img.ixintu.com/download/jpg/202001/e60b9bb6a3a5495363300770a4195cac.jpg!con</image>
+    <number>东航MU2298</number>
+    <price>1099</price>
+  </item>
+
+ <item>
+    <title>厦门-天津</title>
+    <time>07:40-10:35</time>
+    <image>https://qxb-logo-url-osscache.qixin.com/OriginalUrl/b77262917f32435dbc8ac178168d020d.jpg</image>
+    <number>厦航MF8275</number>
+    <price>1145</price>
+  </item>
+
+  <item>
+    <title>厦门-天津</title>
+    <time>07:40-10:35</time>
+    <image>https://qxb-logo-url-osscache.qixin.com/OriginalUrl/b77262917f32435dbc8ac178168d020d.jpg</image>
+    <number>厦航MF8275</number>
+    <price>1145</price>
+  </item>
+
+ <item>
+    <title>杭州-深圳</title>
+    <time>07:30-09:40</time>
+    <image>https://p1.ssl.qhimg.com/t013e31436d71d739ba.jpg</image>
+    <number>国航CA1737</number>
+    <price>1020</price>
+  </item>
+
+ <item>
+    <title>西安-长沙</title>
+    <time>08:30-11:10</time>
+    <image>https://pic.baike.soso.com/p/20140211/20140211145023-460334553.jpg</image>
+    <number>海航HU7398</number>
+    <price>1100</price>
+  </item>
+</channel>

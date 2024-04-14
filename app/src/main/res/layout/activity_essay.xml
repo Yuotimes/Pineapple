@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/test_big_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gradual_color_bg">
+
+            <ImageButton
+                android:id="@+id/writer_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/back"
+                android:visibility="gone"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/essay_user_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/writer_back"
+                app:civ_border_width="0.3dp"
+                app:civ_border_color="#FF000000"
+                android:src="@mipmap/photo"/>
+
+            <TextView
+                android:id="@+id/essay_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="#0C0507"
+                android:layout_toRightOf="@+id/essay_user_head"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="27dp"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/bt_follow"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="250dp"
+                android:layout_toRightOf="@id/essay_user_head"
+                android:background="@drawable/ship_item"
+                android:text="关注"
+                >
+            </Button>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/test_big_title"
+            android:layout_above="@+id/test_bottom"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/essay_photo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/essay_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/essay_photo1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:maxLines="1"
+                    android:text="青岛City walk小众打卡点!"
+                    android:textColor="#1B1B1B"
+                    android:textSize="20dp" />
+                <TextView
+                    android:padding="20dp"
+                    android:id="@+id/essay_writing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/essay_title"
+                    android:text="来青岛不想去栈桥公园人挤人，私人私人摄影师分享三个绝美小众景点！怎么拍怎么好看～\n\n1.燕儿岛智慧公园\n\n直接打车或者公交车都能到，5-6点可以看到绝美的日落！尤其是路灯亮起时像在芬兰一样，运气好碰到下雪将会是绝杀！人也很少，公园不大，但是拍美照非常出片。\n\n2.青岛古玩文化市场\n\n建议大家早起去逛！一般中午12点左右就开始陆陆续续收摊啦～里面有CCD、胶片机、旧书、珍稀古玩之类的小东西。特别推荐大家可以去淘一淘。在那里买了一本《阿呆》才2元1本！\n\n3.鱼鸣嘴村\n\n特别适合和朋友一起去野餐的海边️下海的路非常好找，人也比较少。建议自驾或者打车前往。这里冬天的海鸥一点也不比栈桥公园的少！\n"
+                    android:textColor="#2B2A2A"
+                    android:textSize="17dp" />
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+    <RelativeLayout
+        android:id="@+id/test_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/bt_show_comments"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/ship_item2"
+            android:text="查看评论" />
+
+        <ImageButton
+            android:id="@+id/bt_collect"
+            android:layout_marginTop="2dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/collection"/>
+        <TextView
+            android:id="@+id/collection_number"
+            android:layout_toRightOf="@+id/bt_collect"
+            android:layout_marginTop="2dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:text="0"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
